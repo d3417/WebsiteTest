@@ -1,2 +1,17 @@
-<b>Questa è una index caro amico</b>
-<title>Ma si mette prima, dopo, oppure a casaccio?</title>
+<html>
+   <div id="iframez">
+<iframe src="https://aux.app/search" id="test" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+    Your browser doesn't support iframes
+</iframe>
+ </div>
+ 
+ <script>
+ var iframe = document.getElementById('test');
+
+// define variable 'a'
+var content = '<div _ngcontent-xjw-c38="" class="modal-holder"><div _ngcontent-xjw-c38="" class="modal ng-trigger ng-trigger-modalState" style="margin-top: 0px; transform: translateX(0px) scale(1); opacity: 1;"><!----><header _ngcontent-xjw-c38="" class="ng-tns-c38-3 ng-star-inserted" style=""><div _ngcontent-xjw-c38="" class="title">aux.app is temporarily not available</div><!----></header><section _ngcontent-xjw-c38="" class="content scrollable"><div _ngcontent-xjw-c38="" class="ng-tns-c38-3"></div><app-connection-retry _nghost-xjw-c39="" class="ng-star-inserted" style=""><div _ngcontent-xjw-c39="" class="connection-retry"><h1 _ngcontent-xjw-c39="">We are very sorry about that.</h1><p _ngcontent-xjw-c39="">You will be reconnected automatically as soon as we are back online</p><!----></div></app-connection-retry></section><!----></div></div>';
+
+iframe.contentWindow.document.open();
+iframe.contentWindow.document.write(content);
+iframe.contentWindow.document.close();
+  </script>
